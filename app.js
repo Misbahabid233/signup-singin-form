@@ -98,10 +98,10 @@ loginBtn && loginBtn.addEventListener("click", function() {
         if (user.inputE === loginE.value) { // Use inputE instead of email
             userFound = true; // User email matched
             if (user.inputP === loginP.value) { // Use inputP instead of password
-                console.log("Login successful"); // Notify of successful login
+                alert("Login successful"); // Notify of successful login
                 break; // Exit loop on successful login
             } else {
-                console.log("wrong"); // Notify of wrong password
+                alert("wrong"); // Notify of wrong password
                 break; // Exit loop if password is wrong
             }
         }
@@ -109,7 +109,7 @@ loginBtn && loginBtn.addEventListener("click", function() {
     
     // If user not found at all
     if (!userFound) {
-        console.log("Email not found");
+        alert("Email not found");
     }
 });
 
